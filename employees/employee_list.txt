@@ -1,3 +1,0 @@
-Amit | 1234 | Dev
-Rajan | 12356 | IT
-Manoj | 45322 | HR
