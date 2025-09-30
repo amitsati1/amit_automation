@@ -1,4 +1,6 @@
 FROM ubuntu
-MAINTAINER test-user
-RUN apt update
-CMD ["echo", "Hello World"]
+RUN apt-get update
+RUN apt-get install -y apache2 
+COPY index.html /var/www/html/
+EXPOSE 80
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
